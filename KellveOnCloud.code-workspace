@@ -1,0 +1,57 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+ 
+	"settings": {
+		 "al.codeAnalyzers": [
+      "${CodeCop}",
+      "${UICop}",
+      "${PerTenantCop}"
+    ], 
+    
+    "al.enableCodeAnalysis": true,
+    "al.enableCodeActions": true,
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.ObjectNamePrefix": "KEL ",
+    "CRS.OnSaveAlFileAction": "Rename",
+    "CRS.RemovePrefixFromFilename": true,
+    "alOutline.codeActionsOnSave": [
+      "SortTableFields",
+      "SortProperties",
+      "SortVariables",
+      "FormatDocument"
+    ],
+    "alOutline.fixCodeCopMissingParenthesesOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "al.packageCachePath": [
+      "../.alpackages",
+      "../../.alpackages",
+    ],
+    "al.ruleSetPath": "/.rulesets/update.rulset.json",
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+        {
+            "name": "Kellve",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Dev",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]  
+	}
+}
