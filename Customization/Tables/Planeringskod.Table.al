@@ -1,6 +1,6 @@
 table 50013 Planeringskod
 {
-    Caption = 'Planeringskod';
+    Caption = 'Planning Code';
     DataClassification = ToBeClassified;
 
     fields
