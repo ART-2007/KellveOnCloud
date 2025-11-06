@@ -1,4 +1,4 @@
-tableextension 55008 "KEL UPD Routing Header" extends "Routing Header"
+tableextension 55008 "KEL Routing Header" extends "Routing Header"
 {
     fields
     {
